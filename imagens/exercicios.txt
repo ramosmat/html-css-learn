@@ -1,0 +1,22 @@
+Tentar fazer o site que está pronto no slide. Informações:
+
+Amarelo1 (cor background do botão e preço): #febe01
+Amarelo2 (cor texto do botão): #332200
+
+Preto: #111
+Cinza: #b2b2b2
+
+Font: Arial
+
+Alinhar texto ao centro;
+Arredondar bordas;
+
+Textos:
+
+Carros e Bicicletas
+
+Carro: R$ 1999
+Carro modelo 2045, com 200km rodados.
+
+Bicicleta: R$ 199
+Bicicleta modelo 2050, com 20km rodados.

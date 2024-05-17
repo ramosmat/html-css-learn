@@ -1,0 +1,45 @@
+html {
+  /* Decidi colocar IBEM Plex Mono, acho mais bonita que Arial */
+  font-family: "IBM Plex Mono", monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: bisque;
+}
+
+h1,
+p {
+  margin-left: 2rem;
+}
+
+p {
+  font-size: 20px;
+}
+
+ul {
+  margin: 0 2rem 0 2rem;
+  list-style: none;
+}
+
+.ul-estados {
+  border-bottom: grey solid 1px;
+}
+
+a {
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+h2 a {
+  color: seagreen;
+}
+
+.hoje {
+  color: darkred;
+}
+
+.amanha {
+  color: darkblue;
+}
