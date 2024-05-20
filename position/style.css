@@ -1,18 +1,28 @@
-h1 {
+body {
+  font-family: Arial;
   margin: 0;
-  padding: 10px;
-  background: lightblue;
+  background: #f7f7f7;
 }
 
-.index1 {
-  position: relative;
-  background: greenyellow;
-  top: 30px;
-  z-index: 1;
+h1 {
+  font-size: 40px;
+  text-align: center;
+  background-color: #d7d7d7;
+  margin: 50px 0;
 }
 
-.index2 {
-  position: absolute;
-  background: lightcoral;
-  top: 60px;
+button {
+  background: white;
+  border: none;
+  border-radius: 4px;
+  padding: 15px 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 50px 0;
 }
