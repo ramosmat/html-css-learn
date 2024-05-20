@@ -1,35 +1,18 @@
 .grid {
   display: grid;
   gap: 20px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto) 1fr;
+  place-items: start;
 }
 
 .titulo {
-  grid-column: 2;
-  justify-items: end;
-  text-align: right;
+  grid-column: 1 / -1;
 }
 
-.comprar {
-  background: #a8f;
-  color: #103;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 4px;
-  font-size: 20px;
-  align-self: start;
-  text-align: center;
-}
-
-.preco {
-  background: #ddd;
-  padding: 5px 10px;
-  border-radius: 4px;
-  place-self: start end;
-}
-
-.descricao {
-  text-align: right;
+.foto {
+  grid-column: 1;
+  grid-row: 2 / 5;
 }
 
 /* Estilos Gerais */
@@ -56,5 +39,20 @@ span {
 
 img {
   max-width: 100%;
+  border-radius: 4px;
+}
+
+.comprar {
+  background: #a8f;
+  color: #103;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.preco {
+  background: #ddd;
+  padding: 5px 10px;
   border-radius: 4px;
 }
