@@ -1,0 +1,20 @@
+body {
+  margin: 0px;
+  padding: 10px;
+}
+
+.px {
+  background-color: lightcoral;
+  font-size: 24px;
+}
+
+.rem {
+  background-color: lightgreen;
+  font-size: 2rem;
+}
+
+.vw-vh {
+  background: lightblue;
+  width: calc(100vw - 100px);
+  height: 100vh;
+}
