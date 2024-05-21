@@ -1,0 +1,67 @@
+a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #caf;
+  color: #217;
+}
+
+/* Pode ser usado em todos os elementos */
+a:hover {
+  background: #adf;
+  color: #147;
+}
+
+/* Mais especifico para links e elementos que podem ser focados: botões, links, formulários.
+  Podemos testar qual elemento é focavel clicando tab no teclado*/
+a:focus {
+  background: #cfa;
+  color: #371;
+  /* border: 1px solid red; */
+}
+
+/* Ainda mais especifico que o focus, é usado quando o elemento é clicado */
+a:active {
+  background: #ffa;
+  color: #761;
+}
+
+/* Mais especifico para links, quando o link já é visitado */
+a:visited {
+  background: #fda;
+  color: #731;
+}
+
+/* Os seletores abaixo até o :not não se aplicam exclusivamente em ul/ol->li, poderiam ser divs ou outra tag
+  O que importa é ter a relação de pai e filho*/
+.lista-1 li {
+  background: #ffaa;
+}
+
+.lista-1 li:first-child {
+  background: #caf;
+}
+
+.lista-1 li:last-child {
+  background: #cfa;
+}
+
+/* Seleciona os elementos de index par (primeiro index = 1) */
+.lista-2 li:nth-child(even) {
+  background: rgb(185, 185, 185);
+}
+
+/* Seleciona de 3 em 3 elementos */
+.lista-3 li:nth-child(3n) {
+  background: rgb(185, 185, 185);
+}
+
+.lista-4 li:not(:first-child, :last-child, .terceiro) {
+  background: tomato;
+}
+
+h2:not(.contato) {
+  text-decoration: underline;
+}
