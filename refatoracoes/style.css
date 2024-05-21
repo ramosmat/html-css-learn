@@ -1,0 +1,172 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #f7f7f7;
+  display: grid;
+  gap: 3.125rem;
+  justify-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 3.125rem 0 0 0;
+}
+
+button {
+  background: white;
+  border: none;
+  border-radius: 0.3125rem;
+  padding: 0.9375rem 1.875rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2.5rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  background: white;
+  width: 100%;
+}
+
+/* Estilos para navegação */
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+}
+
+.nav {
+  display: inherit;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.nav-button {
+  /* colocando no estilo padrão uma borda transparente do mesmo
+  tamanho da borda do hover evitamos o tick */
+  border: 0.125rem solid transparent;
+}
+
+.nav-button:hover {
+  border: 0.125rem solid red;
+}
+
+/* Outra forma de corrigir o tick do hover: */
+/* .nav-button:hover {
+  border: 0.125rem solid red;
+  padding: 0.8125rem 1.75rem;
+} */
+
+/* Estilo do container principal */
+.container {
+  display: grid;
+  max-width: 62.5rem;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 3.75rem;
+}
+
+/* article Descrição */
+.descricao {
+  align-content: center;
+  position: relative;
+  text-align: right;
+  padding: 2.5rem;
+  background: white;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.descricao p {
+  margin: 1.25rem;
+}
+
+/* novo estilo para o red-dash */
+.descricao::after {
+  content: "";
+  height: 0.25rem;
+  width: 3.75rem;
+  background: #e21;
+  position: absolute;
+  top: 1.875rem;
+  right: -1.875rem;
+}
+
+/* .red-dash {
+  height: 0.25rem;
+  width: 3.75rem;
+  background: #e21;
+  position: absolute;
+  top: 1.875rem;
+  right: -1.875rem;
+} */
+
+.vermais {
+  color: white;
+  background: #e21;
+}
+
+.vermais:hover {
+  color: white;
+  background: rgb(169, 25, 12);
+}
+
+/* Imagem bicicleta */
+.bike {
+  max-width: 100%;
+  display: block;
+  grid-column: 2 / 3;
+}
+
+/* Article Vantagens bikcraft */
+.vantagens {
+  color: rgba(0, 0, 0, 0.2);
+  padding: 2.5rem;
+  align-self: center;
+  text-align: right;
+  font-size: 4rem;
+  font-weight: 700;
+  background: url("./img/onda.svg") center;
+}
+
+/* Article caracteristicas */
+.caract {
+  margin: 0;
+  background: white;
+  padding: 2.5rem;
+}
+
+.titulo {
+  margin: 0;
+}
+
+.caract-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.625rem 1.25rem;
+  padding: 1.25rem;
+  border-left: 2px solid transparent;
+}
+
+.caract-item:hover {
+  border-left: 2px solid red;
+}
+
+.caract-item:nth-child(odd) {
+  background: #f7f7f7;
+}
+
+.caract-item p {
+  grid-column: 2;
+}
