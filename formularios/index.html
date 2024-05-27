@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <form action="./">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nomes" placeholder="Exemplo" />
+
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" name="senhas" disabled />
+
+      <div class="checkbox">
+        <input type="checkbox" name="termos" id="termos" value="aceito" />
+        <label for="termos">Aceito os termos de condições da empresa</label>
+      </div>
+
+      <div class="checkbox">
+        <input type="checkbox" name="anuncios" id="anuncio" value="aceito" />
+        <label for="anuncio">Aceito receber anúncios da empresa</label>
+      </div>
+
+      <p>Entrega</p>
+      <div class="radio">
+        <input type="radio" name="entregas" id="retirada" value="aceito" />
+        <label for="retirada">Retirar no local</label>
+      </div>
+
+      <div class="radio">
+        <input type="radio" name="entregas" id="fretado" value="aceito" />
+        <label for="fretado">Fretado</label>
+      </div>
+
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="emails"
+        placeholder="exemplo@exemplo.com"
+      />
+
+      <label for="idade">Idade</label>
+      <input type="number" id="idade" name="idades" />
+
+      <label for="data">Data</label>
+      <input type="date" id="data" name="datas" />
+
+      <label for="parcela">Parcelamento</label>
+      <select name="parcelas" id="parcela" required>
+        <option value="" disabled selected>Sample text</option>
+        <option value="1">1x de R$400,00</option>
+        <option value="2">2x de R$300,00</option>
+        <option value="3">3x de R$200,00</option>
+        <option value="4">4x de R$100,00</option>
+      </select>
+
+      <label for="mensagem"></label>
+      <textarea name="mensagens" id="mensagem" rows="5"></textarea>
+
+      <div class="button">
+        <button>Enviar</button>
+      </div>
+    </form>
+  </body>
+</html>
