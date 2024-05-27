@@ -1,0 +1,55 @@
+[required] {
+  border: 2px solid red;
+}
+
+[href="#contato"] {
+  display: block;
+  padding: 10px 20px;
+  border: 1px solid green;
+  color: white;
+}
+
+[href^="#"] {
+  background: tomato;
+}
+
+section > h2 {
+  color: blue;
+}
+
+p {
+  margin: 0;
+}
+
+article {
+  background: lightgreen;
+  padding: 10px;
+}
+
+p + p {
+  margin-top: 20px;
+}
+
+h3 {
+  color: peru !important;
+}
+/* * {
+  border: 2px solid violet;
+} */
+
+#produtos {
+  color: aquamarine;
+}
+
+#intro #servicos {
+  color: salmon;
+}
+
+#serviços {
+  color: black;
+}
+
+.titulo {
+  color: tomato;
+  padding: 10px;
+}
