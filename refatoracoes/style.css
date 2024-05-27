@@ -1,7 +1,30 @@
+:root {
+  --cor-primaria: #e21;
+  --cor-primaria-escura: #900;
+  --background-1: #f7f7f7;
+  --background-2: #ffffff;
+  --text: #000000;
+  --subtitulo: rgba(0, 0, 0, 0.2);
+  --onda: url("./img/onda-clara.svg") center;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-primaria: #e21;
+    --cor-primaria-escura: #900;
+    --background-1: #111111;
+    --background-2: #000000;
+    --text: #ffffff;
+    --subtitulo: rgba(255, 255, 255, 0.2);
+    --onda: url("./img/onda-escura.svg") center;
+  }
+}
+
 body {
+  color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  background: #f7f7f7;
+  background: var(--background-1);
   display: grid;
   gap: 3.125rem;
   justify-items: center;
@@ -14,7 +37,8 @@ h1 {
 }
 
 button {
-  background: white;
+  color: var(--text);
+  background: var(--background-2);
   border: none;
   border-radius: 0.3125rem;
   padding: 0.9375rem 1.875rem;
@@ -32,7 +56,7 @@ footer {
   padding: 2.5rem 0;
   font-size: 1.25rem;
   font-weight: 600;
-  background: white;
+  background: var(--background-2);
   width: 100%;
 }
 
@@ -80,7 +104,7 @@ header {
   position: relative;
   text-align: right;
   padding: 2.5rem;
-  background: white;
+  background: var(--background-2);
 }
 
 h2 {
@@ -97,7 +121,7 @@ h2 {
   content: "";
   height: 0.25rem;
   width: 3.75rem;
-  background: #e21;
+  background: var(--cor-primaria);
   position: absolute;
   top: 1.875rem;
   right: -1.875rem;
@@ -106,7 +130,7 @@ h2 {
 /* .red-dash {
   height: 0.25rem;
   width: 3.75rem;
-  background: #e21;
+  background: var(--cor-primaria);
   position: absolute;
   top: 1.875rem;
   right: -1.875rem;
@@ -114,7 +138,7 @@ h2 {
 
 .vermais {
   color: white;
-  background: #e21;
+  background: var(--cor-primaria);
 }
 
 .vermais:hover {
@@ -134,19 +158,20 @@ h2 {
 
 /* Article Vantagens bikcraft */
 .vantagens {
-  color: rgba(0, 0, 0, 0.2);
+  color: var(--subtitulo);
   padding: 2.5rem;
   align-self: center;
   text-align: right;
   font-size: 4rem;
   font-weight: 700;
-  background: url("./img/onda.svg") center;
+  /* background: url("./img/onda.svg") center; */
+  background: var(--onda);
 }
 
 /* Article caracteristicas */
 .caract {
   margin: 0;
-  background: white;
+  background: var(--background-2);
   padding: 2.5rem;
 }
 
@@ -167,7 +192,7 @@ h2 {
 }
 
 .caract-item:nth-child(odd) {
-  background: #f7f7f7;
+  background: var(--background-1);
 }
 
 .caract-item p {
